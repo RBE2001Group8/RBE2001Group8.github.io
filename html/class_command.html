@@ -98,8 +98,26 @@ Inheritance diagram for Command:</div>
  <div class="center">
   <img src="class_command.png" usemap="#Command_map" alt=""/>
   <map id="Command_map" name="Command_map">
-<area href="class_blink_l_e_d.html" alt="BlinkLED" shape="rect" coords="0,56,124,80"/>
-<area href="class_line_follow_to_switch.html" alt="LineFollowToSwitch" shape="rect" coords="134,56,258,80"/>
+<area href="class_blink_l_e_d.html" alt="BlinkLED" shape="rect" coords="157,56,304,80"/>
+<area href="class_drive.html" alt="Drive" shape="rect" coords="157,112,304,136"/>
+<area href="class_drive_and_square_on_line.html" alt="DriveAndSquareOnLine" shape="rect" coords="157,168,304,192"/>
+<area href="class_drive_to_rear_line.html" alt="DriveToRearLine" shape="rect" coords="157,224,304,248"/>
+<area href="class_line_follow_over_lines.html" alt="LineFollowOverLines" shape="rect" coords="157,280,304,304"/>
+<area href="class_line_follow_to_cross_line.html" alt="LineFollowToCrossLine" shape="rect" coords="157,336,304,360"/>
+<area href="class_line_follow_to_nearest.html" alt="LineFollowToNearest" shape="rect" coords="157,392,304,416"/>
+<area href="class_line_follow_to_switch.html" alt="LineFollowToSwitch" shape="rect" coords="157,448,304,472"/>
+<area href="class_move_arm.html" alt="MoveArm" shape="rect" coords="157,504,304,528"/>
+<area href="class_persistent_blink.html" alt="PersistentBlink" shape="rect" coords="157,560,304,584"/>
+<area href="class_point_turn.html" alt="PointTurn" shape="rect" coords="157,616,304,640"/>
+<area href="class_point_turn_to_line.html" alt="PointTurnToLine" shape="rect" coords="157,672,304,696"/>
+<area href="class_point_turn_to_position.html" alt="PointTurnToPosition" shape="rect" coords="157,728,304,752"/>
+<area href="class_roller_spit.html" alt="RollerSpit" shape="rect" coords="157,784,304,808"/>
+<area href="class_roller_suck.html" alt="RollerSuck" shape="rect" coords="157,840,304,864"/>
+<area href="class_swing_turn.html" alt="SwingTurn" shape="rect" coords="157,896,304,920"/>
+<area href="class_swing_turn_to_line.html" alt="SwingTurnToLine" shape="rect" coords="157,952,304,976"/>
+<area href="class_swing_turn_to_position.html" alt="SwingTurnToPosition" shape="rect" coords="157,1008,304,1032"/>
+<area href="class_turn_to_position.html" alt="TurnToPosition" shape="rect" coords="157,1064,304,1088"/>
+<area href="class_wait_until_pressed.html" alt="WaitUntilPressed" shape="rect" coords="157,1120,304,1144"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -142,6 +160,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>_end</b> ()</
 <tr class="separator:a93e75689d86c0a8675c1f769f721d646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef139180669b92534dd05a89323fb82f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#aef139180669b92534dd05a89323fb82f">start</a> ()</td></tr>
 <tr class="separator:aef139180669b92534dd05a89323fb82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77239d3966482ca309344c176307cd41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#a77239d3966482ca309344c176307cd41">setParallel</a> (bool value)</td></tr>
+<tr class="separator:a77239d3966482ca309344c176307cd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47591237acddec582ddf396d516c50c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#a47591237acddec582ddf396d516c50c0">isParallel</a> ()</td></tr>
+<tr class="separator:a47591237acddec582ddf396d516c50c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -221,6 +243,22 @@ String&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a47591237acddec582ddf396d516c50c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Command::isParallel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check if the flag is set to run this command in parallel </p><dl class="section return"><dt>Returns</dt><dd>True if the command should run in parallel </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a0252c920dd7114c29ef04526cfd0f39a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -250,6 +288,28 @@ String&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Check if the command has timed out </p><dl class="section return"><dt>Returns</dt><dd>True if the command has timed out </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a77239d3966482ca309344c176307cd41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Command::setParallel </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the flag to run in parallel, or run sequentially </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>If true, parallel, if false sequential </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['scheduler',['Scheduler',['../class_scheduler.html',1,'']]],
-  ['sendradiationalertnew',['sendRadiationAlertNew',['../class_reactor_link.html#a1f55ee275dfe378da449eb55bfc81cc1',1,'ReactorLink']]],
-  ['sendradiationalertspent',['sendRadiationAlertSpent',['../class_reactor_link.html#a4682d1aad7ce27f4e38fb54e739cd834',1,'ReactorLink']]],
-  ['settimeout',['setTimeout',['../class_command.html#adfbbaa47b15c80c2a713d24e48b843a8',1,'Command']]],
-  ['start',['start',['../class_command.html#aef139180669b92534dd05a89323fb82f',1,'Command']]],
-  ['stop',['stop',['../class_drivetrain.html#a39779799fba07c9549fb309316c238f0',1,'Drivetrain']]],
-  ['swingturn',['swingTurn',['../class_drivetrain.html#a1625a96a3a9d74912e2e53b551dda149',1,'Drivetrain']]]
+  ['reactorlink',['ReactorLink',['../class_reactor_link.html',1,'']]],
+  ['robot',['Robot',['../class_robot.html',1,'']]],
+  ['roller',['Roller',['../class_roller.html',1,'Roller'],['../class_roller.html#aa3601c06194ad8c83d262f879e5b8777',1,'Roller::Roller()']]],
+  ['rollerspit',['RollerSpit',['../class_roller_spit.html',1,'RollerSpit'],['../class_roller_spit.html#a9ea9bf0d362a8909e8f8cfad970de6dc',1,'RollerSpit::RollerSpit()']]],
+  ['rollersuck',['RollerSuck',['../class_roller_suck.html',1,'RollerSuck'],['../class_roller_suck.html#ab1243466396a5c7be0c5dd17612ce568',1,'RollerSuck::RollerSuck()']]],
+  ['run',['run',['../class_scheduler.html#a58fba108ce2748870a6288cd6f5fd1e3',1,'Scheduler']]]
 ];

@@ -94,8 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abfcc3eea7516b5f76422d39676adbd27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drivetrain.html#abfcc3eea7516b5f76422d39676adbd27">Drivetrain</a> ()</td></tr>
-<tr class="separator:abfcc3eea7516b5f76422d39676adbd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff17b0e95d476a48014e40fe7b6d30d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drivetrain.html#aff17b0e95d476a48014e40fe7b6d30d7">Drivetrain</a> (int leftMotorPin, int rightMotorPin)</td></tr>
+<tr class="separator:aff17b0e95d476a48014e40fe7b6d30d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c69c55981b7f56cf1e1e089f65f7f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drivetrain.html#a41c69c55981b7f56cf1e1e089f65f7f6">initialize</a> ()</td></tr>
 <tr class="separator:a41c69c55981b7f56cf1e1e089f65f7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff0124b046bff4f9600a90947ce0532b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drivetrain.html#aff0124b046bff4f9600a90947ce0532b">drive</a> (float speed, float turnRate)</td></tr>
@@ -108,19 +108,36 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a39779799fba07c9549fb309316c238f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abfcc3eea7516b5f76422d39676adbd27"></a>
+<a class="anchor" id="aff17b0e95d476a48014e40fe7b6d30d7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Drivetrain::Drivetrain </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>leftMotorPin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rightMotorPin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor Intentionally does not initialize the drivetrain </p>
+<p>Constructor Assumes the left and right motors are Vex motors geared 1:1 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">leftMotorPin</td><td>Pin that the left motor is plugged into </td></tr>
+    <tr><td class="paramname">rightMotorPin</td><td>Pin that the right motor is plugged into Intentionally does not initialize the drivetrain </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -101,6 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aecc74318f80a9c4df1972dd546dd65f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58fba108ce2748870a6288cd6f5fd1e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scheduler.html#a58fba108ce2748870a6288cd6f5fd1e3">run</a> ()</td></tr>
 <tr class="separator:a58fba108ce2748870a6288cd6f5fd1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b551be4b8b0eecac57cbd285f7e30f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scheduler.html#a33b551be4b8b0eecac57cbd285f7e30f">addParallelCommand</a> (<a class="el" href="class_command.html">Command</a> *command)</td></tr>
+<tr class="separator:a33b551be4b8b0eecac57cbd285f7e30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67788edd83ccc95dcd7d1a51588ac1e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scheduler.html#a67788edd83ccc95dcd7d1a51588ac1e8">addSequentialCommand</a> (<a class="el" href="class_command.html">Command</a> *command)</td></tr>
+<tr class="separator:a67788edd83ccc95dcd7d1a51588ac1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -121,12 +125,58 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds a command to the end of the scheduled list of commands. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a command to the end of the scheduled list of commands, and does change the parallel flag </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">command</td><td>Pointer to the command to add </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a33b551be4b8b0eecac57cbd285f7e30f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scheduler::addParallelCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_command.html">Command</a> *&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a command to the end of the scheduled list, and sets the flag to run in parallel </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Pointer to the command to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>this may change soon with command groups </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a67788edd83ccc95dcd7d1a51588ac1e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scheduler::addSequentialCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_command.html">Command</a> *&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a command to the end of the scheduled list, and sets the flag to not run in parallel </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Pointer to the command to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>this may change soon with command groups </dd></dl>
 
 </div>
 </div>
@@ -182,7 +232,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Execute and iteration of the scheduled commands </p>
+<p>Execute an iteration of the scheduled commands </p>
 
 </div>
 </div>

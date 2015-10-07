@@ -133,15 +133,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">/* Schedule the command */</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_command.html#aef139180669b92534dd05a89323fb82f">start</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> initialized, running;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> startTime;    <span class="comment">//In msec</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> timeout;      <span class="comment">//In msec</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">/* Set if the command should run in parallel */</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_command.html#a77239d3966482ca309344c176307cd41">setParallel</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">/* Check the parallel flag */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_command.html#a47591237acddec582ddf396d516c50c0">isParallel</a>();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> initialized, running, parallel;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> startTime;    <span class="comment">//In msec</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> timeout;      <span class="comment">//In msec</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_command_html_a47591237acddec582ddf396d516c50c0"><div class="ttname"><a href="class_command.html#a47591237acddec582ddf396d516c50c0">Command::isParallel</a></div><div class="ttdeci">bool isParallel()</div><div class="ttdef"><b>Definition:</b> Command.cpp:104</div></div>
+<div class="ttc" id="class_command_html_a77239d3966482ca309344c176307cd41"><div class="ttname"><a href="class_command.html#a77239d3966482ca309344c176307cd41">Command::setParallel</a></div><div class="ttdeci">void setParallel(bool value)</div><div class="ttdef"><b>Definition:</b> Command.cpp:96</div></div>
 <div class="ttc" id="class_command_html_a53de8c6445ccd2f51fe7535a71e20c98"><div class="ttname"><a href="class_command.html#a53de8c6445ccd2f51fe7535a71e20c98">Command::getTime</a></div><div class="ttdeci">unsigned long getTime()</div><div class="ttdef"><b>Definition:</b> Command.cpp:32</div></div>
 <div class="ttc" id="class_command_html_adfbbaa47b15c80c2a713d24e48b843a8"><div class="ttname"><a href="class_command.html#adfbbaa47b15c80c2a713d24e48b843a8">Command::setTimeout</a></div><div class="ttdeci">void setTimeout(unsigned long timeout)</div><div class="ttdef"><b>Definition:</b> Command.cpp:25</div></div>
 <div class="ttc" id="class_command_html"><div class="ttname"><a href="class_command.html">Command</a></div><div class="ttdef"><b>Definition:</b> Command.h:6</div></div>

@@ -103,9 +103,8 @@ Inheritance diagram for LineFollowToSwitch:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0df81cb57e0888a0bf2be6a8b556c951"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0df81cb57e0888a0bf2be6a8b556c951"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LineFollowToSwitch</b> (float speed)</td></tr>
-<tr class="separator:a0df81cb57e0888a0bf2be6a8b556c951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a954792538203ee1b86983105d1b7f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_follow_to_switch.html#a4a954792538203ee1b86983105d1b7f6">LineFollowToSwitch</a> (float speed, <a class="el" href="class_drivetrain.html">Drivetrain</a> drive)</td></tr>
+<tr class="separator:a4a954792538203ee1b86983105d1b7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33e60a489544429d5a1d2708946d45a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33e60a489544429d5a1d2708946d45a1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> ()</td></tr>
 <tr class="separator:a33e60a489544429d5a1d2708946d45a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +142,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>_end</b> ()</
 <tr class="separator:a93e75689d86c0a8675c1f769f721d646 inherit pub_methods_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef139180669b92534dd05a89323fb82f inherit pub_methods_class_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#aef139180669b92534dd05a89323fb82f">start</a> ()</td></tr>
 <tr class="separator:aef139180669b92534dd05a89323fb82f inherit pub_methods_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77239d3966482ca309344c176307cd41 inherit pub_methods_class_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#a77239d3966482ca309344c176307cd41">setParallel</a> (bool value)</td></tr>
+<tr class="separator:a77239d3966482ca309344c176307cd41 inherit pub_methods_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47591237acddec582ddf396d516c50c0 inherit pub_methods_class_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#a47591237acddec582ddf396d516c50c0">isParallel</a> ()</td></tr>
+<tr class="separator:a47591237acddec582ddf396d516c50c0 inherit pub_methods_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -151,6 +154,40 @@ Additional Inherited Members</h2></td></tr>
 String&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 <tr class="separator:a19f7ad73ca8599ad47f9b7bcccc52610 inherit pub_attribs_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4a954792538203ee1b86983105d1b7f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineFollowToSwitch::LineFollowToSwitch </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_drivetrain.html">Drivetrain</a>&#160;</td>
+          <td class="paramname"><em>drive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Line follows until the limit switch in the slot on the front of the robot is triggered </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Linefollowing speed </td></tr>
+    <tr><td class="paramname">drive</td><td><a class="el" href="class_drivetrain.html">Drivetrain</a> object to use for driving, must be initialized </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="abe6f1a2b01742851d9cc50ff31e69b8f"></a>
 <div class="memitem">
@@ -172,7 +209,12 @@ String&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Commands the robot to follow the line at the specified speed </p>
+<p>Commands the robot to follow the line at the specified speed </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>Speed that the robot should line follow at </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_command.html">Command</a>.</p>
 
